@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Automation.MavenPrac.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Validating sign in page(failed)">
+    <parameter name="Test" value="Login"/>
+    <classes>
+      <class name="Automation.MavenPrac.Signin">
+        <methods>
+          <include name="CreateAccount" invocation-numbers="0"/>
+          <include name="Navigate"/>
+        </methods>
+      </class> <!-- Automation.MavenPrac.Signin -->
+    </classes>
+  </test> <!-- Validating sign in page(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"  >
+
+
+<listeners>  
+<listener class-name="Automation.MavenPrac.Listener"/>  
+</listeners>  
+
+
+ <test thread-count="5" name="Validating links in home page">
+    <classes>
+      <class name="Automation.MavenPrac.NewHomePage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ <test thread-count="5" name="Validating create account page">
+    <classes>
+  <class name="Automation.MavenPrac.CreateAccount"/>
+    </classes>
+</test> <!-- Test -->
+  
+  <test thread-count="5" name="Validating sign in page">
+    <classes>
+  <class name="Automation.MavenPrac.Signin"/>
+  <parameter name="Test" value="Login"/>
+    </classes>
+</test> <!-- Test -->
+  
+  <test thread-count="5" name="Test">
+  <classes>
+      <class name="Automation.MavenPrac.AppTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
