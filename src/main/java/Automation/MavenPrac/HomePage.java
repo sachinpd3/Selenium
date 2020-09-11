@@ -28,7 +28,7 @@ public class HomePage
 	}
 	
 	
-	By CreatAccount = By.xpath("//ul[contains(@class,'ltr')]/li[3]/a");
+	//By CreatAccount = By.xpath("//ul[contains(@class,'ltr')]/li[3]/a");
 	By NextDetail = By.id("accountDetailsNext");
 	By AllLink   = By.tagName("a");
   private  By Signin=	  By.linkText("Sign in");
